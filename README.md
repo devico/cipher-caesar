@@ -27,5 +27,5 @@ encrypt(3, 'sample'); // 'vdpsoh'
 Decrypt crypted text:
 
 ```
-decrypt(3, 'vdpsoh'); // 'example'
+decrypt(3, 'vdpsoh'); // 'sample'
 ```
