@@ -1,4 +1,4 @@
-let alphabetLength = 32
+let alphabetLength = 26
 let charToInt = (c) => c.charCodeAt(0)
 let intToChar = (n) => String.fromCharCode(n)
 let startingPoint = charToInt('a')
@@ -8,7 +8,7 @@ let encrypt = (offset, text) => {
 }
 
 let encryptChar = (offset, c) => {
-	return offset > 0 ? cycleChar(offset, c) : offset < 0 ? cycleChar(alphabetLength + offset) : c
+	return offset > 0 ? cycleChar(offset, c) : offset < 0 ? cycleChar(alphabetLength + offset, c) : c
 }
 
 let cycleChar = (offset, c) => {
